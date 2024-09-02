@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --grey-primary: hsl(240, 9%, 89%);
+    --grey-secondary: hsl(240, 7%, 78%);
+    --white: hsl(0, 0%, 100%);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 5.2rem;
+}
+
+.routeLink {
+    text-decoration: none;
+    color: var(--grey-secondary);
+    font-size: 2.4rem;
+    transition: all 0.2s;
+}
+
+.routeLink.ativo {
+    color: var(--white);
+    font-size: 2.8rem;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+@media (max-width: 564px) {
+    nav {
+        gap: 2rem;
+        padding: 1.5rem 3.2rem;
+    }
+
+    nav img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .routeLink {
+        font-size: 1.4rem;
+    }
+
+    .routeLink.ativo {
+        font-size: 1.8rem;
+    }
+}
